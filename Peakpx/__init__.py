@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-class Peakpx:
+class PeakPx:
     def __init__(self):
         self.url = 'https://www.peakpx.com'
     
@@ -21,6 +21,7 @@ class Peakpx:
             except:
                 continue
         return all_links
+    
     def search_wallpapers(self,query : str,page : int = 1):
         p = {'q' : query,'page' : page}
         r = requests.get(f'{self.url}/en/search',params=p)
