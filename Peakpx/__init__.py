@@ -9,9 +9,9 @@ class PeakPx:
         p = {'page' : page}
         r = requests.get(f'{self.url}/',params=p) 
         soup = BeautifulSoup(r.content,'html.parser')
-        anchor = soup.find_all('img')
+        search = soup.find_all('img')
         all_links = []
-        for link in anchor:
+        for link in search:
             try:
                 if link:
                     img = str(link.get('data-srcset')).split()[0]
@@ -26,9 +26,9 @@ class PeakPx:
         p = {'q' : query,'page' : page}
         r = requests.get(f'{self.url}/en/search',params=p)
         soup = BeautifulSoup(r.content,'html.parser')
-        anchor = soup.find_all('img')
+        search = soup.find_all('img')
         all_links = []
-        for link in anchor:
+        for link in search:
             try:
                 if link:
                     img = str(link.get('data-srcset')).split()[0]
