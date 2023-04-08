@@ -1,38 +1,34 @@
-from setuptools import setup
+from setuptools import setup,find_packages
 
-readme = ''
 
-with open('README.md', encoding="utf8") as f:
-    readme = f.read()
+
+with open("README.md", "r") as txt:
+    long_description = txt.read()
     
 with open('requirements.txt') as f:
     to_install = f.read().split()
     
-    
+
 setup(
     name='Peakpx',
-    author='NotStark',
+    version='0.0.1',
+    description='get/search wallpapers from https://www.peakpx.com/',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    author='notstark',
     author_email='YeahAmStark@gmail.com',
-    version='1.0.0',
-    long_description=readme,
     url='https://github.com/NotStark/PeakPX',
-    packages=['Peakpx'],
+    packages=find_packages(),
     classifiers=[
-        'Intended Audience :: Developers',
-        "Natural Language :: English",
-        "Operating System :: OS Independent",
-        'Programming Language :: Python :: 3.7',
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
-        "Programming Language :: Python :: 3.10",
-        "Topic :: Internet :: WWW/HTTP",
-        "Topic :: Software Development :: Libraries",
-        "Topic :: Software Development :: Build Tools",
-
+        "Operating System :: OS Independent"
     ],
-    description='get/search wallpapers from https://www.peakpx.com/',
-    include_package_data=True,
-    keywords=['peakpx','notstark'],
-    install_requires= to_install 
+    install_requires=to_install, 
+    python_requires='>=3.6'
 
 )
+
