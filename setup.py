@@ -10,8 +10,8 @@ with open('requirements.txt') as f:
     
 
 setup(
-    name='Peakpx',
-    version='0.0.1',
+    name='PeakPxApi',
+    version='1.0.0',
     description='get/search wallpapers from https://www.peakpx.com/',
     long_description=long_description,
     long_description_content_type="text/markdown",
