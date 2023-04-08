@@ -1,4 +1,4 @@
-from Peakpx import PeakPx
+from PeakPxApi import PeakPx
 
 
 px = PeakPx()
