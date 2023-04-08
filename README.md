@@ -3,11 +3,11 @@ Unofficial python wrapper for PeakPX.com API
 
 
 ## Installation
-```$ pip install Peakpx```
+```$ pip install PeakPxApi```
 
 ## Usage
 ```
-from Peakpx import PeakPx
+from PeakPxApi import PeakPx
 
 px = PeakPx()
 
