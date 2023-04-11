@@ -22,3 +22,6 @@ wallpapers = px.search_wallpapers(query='one piece') #you can also paas a page p
 ```
 
 
+## Sponsor this project
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/NotStark)
