@@ -3,7 +3,7 @@ Unofficial python wrapper for PeakPX.com API
 
 
 ## Installation
-```$ pip install PeakPxApi```
+```pip install PeakPxApi```
 
 ## Usage
 ```
