@@ -1,5 +1,5 @@
 # PeakPX
-Unofficial python wrapper for PeakPX.com API
+* Unofficial python wrapper for PeakPX.com API
 
 
 ## Installation
