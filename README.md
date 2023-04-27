@@ -6,7 +6,7 @@ Unofficial python wrapper for PeakPX.com API
 ```pip install PeakPxApi```
 
 ## Usage
-```
+```python
 from PeakPxApi import PeakPx
 
 px = PeakPx()
